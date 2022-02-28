@@ -27,33 +27,12 @@ function IndexPage({products}) {
         <title>Jay's Corner TCG</title>
         <link rel="icon" href="/JCTCG_logo.png" />
       </Head>
-      <div className="md:min-h-screen md:flex md:items-center">
-        <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-10">
-          <div className="md:max-h-screen md:w-1/2 flex items-end justify-between md:sticky md:top-0">
-            <Header />
-
-            <motion.div
-              className="md:py-12 hidden md:block md:sticky md:top-0"
-              initial={{opacity: 0, y: 50}}
-              animate={{
-                opacity: 1,
-                y: 0,
-                transition: {
-                  delay: 0.25,
-                },
-              }}
-              exit={{opacity: 0, y: -50}}
-            >
-              <h1 className="font-serif italic text-xl md:text-3xl">Shop:</h1>
-
-              <div className="pt-3">
-                <ProductList products={products} />
-              </div>
-            </motion.div>
-          </div>
+      <div className=" bg-green-200">
+        <div className="flex flex-col space-y-3 md:space-y-0 md:space-x-10">
+          <Header />
 
           <motion.div
-            className="md:min-h-screen py-6 md:py-12 flex items-center md:w-1/2 md:z-40"
+            className="py-6 md:py-12 flex items-center md:z-40"
             initial={{opacity: 0, y: 50}}
             animate={{opacity: 1, y: 0}}
             exit={{opacity: 0, y: -50}}
