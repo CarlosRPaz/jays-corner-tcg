@@ -6,6 +6,7 @@ import {commerce} from "../lib/commerce";
 import Header from "../components/Header";
 import ProductList from "../components/ProductList";
 import ProductGrid from "../components/ProductGrid";
+import Banner from "../components/Banner";
 
 export async function getStaticProps() {
   const {data} = await commerce.products.list();
@@ -28,8 +29,9 @@ function IndexPage({products}) {
         <link rel="icon" href="/JCTCG_logo.png" />
       </Head>
       <div className=" bg-green-200">
-        <div className="flex flex-col space-y-3 md:space-y-0 md:space-x-10">
+        <div className="flex flex-col space-y-3 md:space-y-0">
           <Header />
+          <Banner />
 
           <motion.div
             className="py-6 md:py-12 flex items-center md:z-40"
