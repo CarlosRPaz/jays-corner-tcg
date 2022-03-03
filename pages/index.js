@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import ProductList from "../components/ProductList";
 import ProductGrid from "../components/ProductGrid";
 import Banner from "../components/Banner";
+import Socials from "../components/Socials";
 
 export async function getStaticProps() {
   const {data} = await commerce.products.list();
@@ -28,22 +29,26 @@ function IndexPage({products}) {
         <title>Jay's Corner TCG</title>
         <link rel="icon" href="/JCTCG_logo.png" />
       </Head>
-      <div className=" bg-green-200">
-        <div className="flex flex-col space-y-3 md:space-y-0">
+      <div>
+        <div className="flex flex-col">
           <Header />
           <Banner />
 
           <motion.div
-            className="py-6 md:py-12 flex items-center md:z-40"
+            id="shop-section"
+            className="py-6 px-6 md:py-12 flex-col items-center md:z-40 bg-secondary-dark"
             initial={{opacity: 0, y: 50}}
             animate={{opacity: 1, y: 0}}
             exit={{opacity: 0, y: -50}}
           >
+            <h1 className="text-text-primary-light text-center">Jay's Shop</h1>
             <ProductGrid
               products={products}
               className="h-112 md:h-96 xl:h-112"
             />
           </motion.div>
+
+          <Socials />
         </div>
       </div>
     </>

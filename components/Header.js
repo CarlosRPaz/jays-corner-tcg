@@ -36,20 +36,11 @@ function Header() {
 
         <div>cart</div>
         {/*
-      <div className="py-3 lg:py-5 flex items-center">
-      <Link href="/">
-      <a title="Return to ChopChop">Shop</a>
-      </Link>
-      <span className="pr-1">,</span>
-      <CartSummary />
-      </div>
-      
-      <Link href="/">
-      <a title="Return to ChopChop">
-      <LogoSVG className="w-full" />
-      </a>
-      </Link>
-    */}
+          <div className="py-3 lg:py-5 flex items-center">
+          <span className="pr-1">,</span>
+          <CartSummary />
+          </div>
+        */}
       </div>
     </header>
   );

@@ -1,18 +1,21 @@
 import "react-toastify/dist/ReactToastify.css";
 import "tailwindcss/tailwind.css";
 
-import { useEffect } from "react";
-import { AnimatePresence } from "framer-motion";
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
-import { ToastContainer } from "react-toastify";
+// My Tailwindcss
+import "./../styles/globals.css";
+
+import {useEffect} from "react";
+import {AnimatePresence} from "framer-motion";
+import {Elements} from "@stripe/react-stripe-js";
+import {loadStripe} from "@stripe/stripe-js";
+import {ToastContainer} from "react-toastify";
 
 import * as gtag from "../lib/gtag";
 
-import { ThemeProvider } from "../context/theme";
-import { ModalProvider } from "../context/modal";
-import { CartProvider } from "../context/cart";
-import { CheckoutProvider } from "../context/checkout";
+import {ThemeProvider} from "../context/theme";
+import {ModalProvider} from "../context/modal";
+import {CartProvider} from "../context/cart";
+import {CheckoutProvider} from "../context/checkout";
 
 import Layout from "../components/Layout";
 import Modal from "../components/Modal";
@@ -29,7 +32,7 @@ const toastOptions = {
   toastClassName: "bg-ecru-white rounded-lg text-black px-3 shadow-md",
 };
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({Component, pageProps, router}) {
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url);

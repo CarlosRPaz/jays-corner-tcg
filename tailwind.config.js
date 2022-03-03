@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         'primary-dark': "#171717",
+        'secondary-dark': "#252525",
         'text-primary-light': "#F5F5F5",
         clementine: "#EF7300",
         tumbleweed: "#D9A876",
@@ -28,6 +29,7 @@ module.exports = {
       },
     },
     fontFamily: {
+      Poppins: ["Poppins", "sans-serif"],
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
       serif: ["'EB Garamond'", ...defaultTheme.fontFamily.serif],
     },
