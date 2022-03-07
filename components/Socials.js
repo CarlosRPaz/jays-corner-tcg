@@ -8,7 +8,7 @@ function Socials() {
                 <div className="relative w-16 h-16 mx-auto">
                     <Image
                         src="/tiktok_svg.svg"
-                        alt="Jay's Corner TCG Banner"
+                        alt="Tik Tok Icon"
                         layout="fill"
                         objectFit="contain"
                     />
@@ -16,7 +16,7 @@ function Socials() {
                 <div className="relative w-16 h-16 mx-auto">
                     <Image
                         src="/twitter_svg.svg"
-                        alt="Jay's Corner TCG Banner"
+                        alt="Twitter Icon"
                         layout="fill"
                         objectFit="contain"
                     />
@@ -24,7 +24,7 @@ function Socials() {
                 <div className="relative w-16 h-16 mx-auto">
                     <Image
                         src="/youtube_svg.svg"
-                        alt="Jay's Corner TCG Banner"
+                        alt="Youtube Icon"
                         layout="fill"
                         objectFit="contain"
                     />
@@ -32,7 +32,7 @@ function Socials() {
                 <div className="relative w-16 h-16 mx-auto">
                     <Image
                         src="/ig_svg.svg"
-                        alt="Jay's Corner TCG Banner"
+                        alt="Instagram Icon"
                         layout="fill"
                         objectFit="contain"
                     />

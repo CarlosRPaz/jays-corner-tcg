@@ -1,5 +1,5 @@
-function ProductAttributes({ attributes = [] }) {
-  if (!attributes || attributes.length === 0) return null;
+function ProductAttributes({attributes = []}) {
+  if(!attributes || attributes.length === 0) return null;
 
   return (
     <div className="py-4 hidden md:grid grid-cols-1 md:grid-cols-2 gap-4">

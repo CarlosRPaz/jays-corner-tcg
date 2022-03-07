@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-function ProductImages({ images = [] }) {
-  if (!images || images.length === 0) return null;
+function ProductImages({images = []}) {
+  if(!images || images.length === 0) return null;
 
-  return images.map(({ id, url, image_dimensions }) => (
+  return images.map(({id, url, image_dimensions}) => (
     <div key={id} className="md:py-3">
       <Image
         key={id}
