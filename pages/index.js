@@ -44,7 +44,7 @@ function IndexPage({products}) {
             <h1 className="text-text-primary-light text-center">Jay's Shop</h1>
             <ProductGrid
               products={products}
-              className="h-112 md:h-96 xl:h-112"
+              className="h-48 md:h-96 xl:h-112"
             />
           </motion.div>
 

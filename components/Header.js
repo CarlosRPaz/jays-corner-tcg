@@ -7,13 +7,13 @@ import LogoSVG from "../svg/logo.svg";
 
 function Header() {
   return (
-    <header className="w-full bg-primary-dark text-text-primary-light">
+    <header className="w-full bg-primary-dark text-text-primary-light py-4">
       <div className="flex justify-between px-5 max-w-7xl w-full mx-auto">
         <div className="flex space-x-6">
           <div className="relative w-16 h-16 cursor-pointer">
             <Link href="/">
               <Image
-                src="/JCTCG_logotext.png"
+                src="/JCTCG_logo.png"
                 alt="Jay's Corner TCG Text Logo"
                 layout="fill"
                 objectFit="contain"
@@ -28,19 +28,16 @@ function Header() {
             <Link href="#socials-section">
               <a className="">Socials</a>
             </Link>
-            <Link href="/contact">
+            <Link href="/about">
               <a className="">About Us</a>
             </Link>
           </div>
         </div>
 
-        <div>cart</div>
-        {/*
-          <div className="py-3 lg:py-5 flex items-center">
-          <span className="pr-1">,</span>
+        <div className="py-3 lg:py-5 flex items-center">
           <CartSummary />
-          </div>
-        */}
+        </div>
+
       </div>
     </header>
   );
